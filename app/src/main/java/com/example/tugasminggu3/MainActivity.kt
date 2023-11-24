@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val password = findViewById<TextInputEditText>(R.id.tf_password)
         val valuePass = password.text.toString()
 
-        if (valueUser == "ucup" && valuePass == "12345"){
+        if (valueUser == "samsul hadi" && valuePass == "220441100138"){
             val intent = Intent(this,HomeActivity::class.java).also {
                 it.putExtra("USER", valueUser)
                 it.putExtra("PASS", valuePass)
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
         }else{
             Toast.makeText(this,"Username / Password Salah", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this,"Username = ucup dan Password = 12345", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Username = samsul hadi dan Password = 220441100138", Toast.LENGTH_SHORT).show()
         }
     }
 }

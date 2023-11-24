@@ -43,7 +43,7 @@
             android:drawablePadding="26px"
             android:drawableTint="#2196F3"
             android:hint="username"
-            android:inputType="text" />
+            android:inputType="text"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
