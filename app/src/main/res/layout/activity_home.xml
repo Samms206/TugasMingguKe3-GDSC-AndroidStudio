@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Selamat Datang"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingEnd="32px"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/baseline_account_circle_24"
+            app:tint="#2196F3" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home"
+        app:srcCompat="@drawable/saldo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="History Transaksi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        <ImageView
+            android:id="@+id/img_d"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diamond Mobile legends" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="14 Nov 2023 - 08:12" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_toEndOf="@+id/linear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="-Rp 100.500"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+        <ImageView
+            android:id="@+id/img_d2"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d2">
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terima Uang" />
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="12 Nov 2023 - 14:04" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv32"
+            android:layout_toEndOf="@+id/linear2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="+Rp 249.500"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+        <ImageView
+            android:id="@+id/img_d3"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d3">
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terima Uang" />
+
+            <TextView
+                android:id="@+id/tv23"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="12 Nov 2023 - 14:04" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv33"
+            android:layout_toEndOf="@+id/linear3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="+Rp 249.500"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="0dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+        <ImageView
+            android:id="@+id/img_d4"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d4">
+            <TextView
+                android:id="@+id/tv14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terima Uang" />
+
+            <TextView
+                android:id="@+id/tv24"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="12 Nov 2023 - 14:04" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv34"
+            android:layout_toEndOf="@+id/linear4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="+Rp 249.500"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="0dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+        <ImageView
+            android:id="@+id/img_d5"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d5">
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terima Uang" />
+
+            <TextView
+                android:id="@+id/tv25"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="12 Nov 2023 - 14:04" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv35"
+            android:layout_toEndOf="@+id/linear5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="+Rp 249.500"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="0dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">
+        <ImageView
+            android:id="@+id/img_d6"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d6">
+            <TextView
+                android:id="@+id/tv16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terima Uang" />
+
+            <TextView
+                android:id="@+id/tv26"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="12 Nov 2023 - 14:04" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv36"
+            android:layout_toEndOf="@+id/linear6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="+Rp 249.500"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="0dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
+        <ImageView
+            android:id="@+id/img_d7"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20px"
+            android:layout_toEndOf="@+id/img_d7">
+            <TextView
+                android:id="@+id/tv17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terima Uang" />
+
+            <TextView
+                android:id="@+id/tv27"
+                android:layout_marginTop="0px"
+                android:layout_toEndOf="@+id/tv17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="12 Nov 2023 - 14:04" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv37"
+            android:layout_toEndOf="@+id/linear7"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:text="+Rp 249.500"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
